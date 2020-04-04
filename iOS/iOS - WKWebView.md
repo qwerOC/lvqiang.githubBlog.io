@@ -71,12 +71,13 @@ WKPreferences *preference = [[WKPreferences alloc]init];
         //注册一个name为jsToOcNoPrams的js方法 设置处理接收JS方法的对象
  [wkUController addScriptMessageHandler:weakScriptMessageDelegate  name:@"callIos"];
   config.userContentController = wkUController;
- 
+ 7.销毁 [[_webView configuration].userContentController removeScriptMessageHandlerForName:@"callIos"];
+
 ```
 ### wkwebview 一些系统版本兼容和弹alert 问题
 ```
 
 ```
-### 代码比较多还是上例子吧
+### [代码比较多还是上例子吧](https://github.com/qwerOC/lvqiang.githubBlog.io/tree/master/iOS/wkwebview)
 
 
