@@ -2,6 +2,17 @@
 ### 什么是Block
 > Block 是将函数及其执行上下文封装起来的对象
 
+### Block 是由什么组成 __block_impl 和 __main_block_desc_0
+> __block_impl
+>>1.isa指针 用与指向block的指针
+>>2.flags 附加信息
+>>3.reserved 保留字段
+>>4.funcptr 函数指针指向block实现函数地址
+
+>__main_block_desc_0
+>> reserved 
+>> Block_size block大小
+
 ### block 截获变量
 ```
 1.对于基本数据类型 局部变量截获其值
