@@ -13,7 +13,7 @@ git --set-upstream origin 远端分支名称
 # 删除本地分支
 git branch -d 分支名称
 # 删除远端分支
-git push -delete 分支名称
+git push origin --delete 分支名称
 
 
 /// 子分支合并
