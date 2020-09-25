@@ -25,6 +25,6 @@ git push  ///和并完成推送到远端
 git checkout .
 /// 查看区别
 git diff
-ffffffff
+
 =======
 
