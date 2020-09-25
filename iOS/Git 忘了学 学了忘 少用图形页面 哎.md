@@ -17,6 +17,7 @@ git push -delete 分支名称
 
 
 /// 子分支合并
+gggggg
 git checkout master /// 切换到主分支
 git merge  要合并的分支名称
 git push  ///和并完成推送到远端
