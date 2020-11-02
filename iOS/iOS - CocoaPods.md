@@ -32,3 +32,9 @@ sudo gem uninstall cocoapods-XXX
 //批量删除
 sudo rm -rf /usr/local/bin/pod ; gem list | grep cocoapods | awk '{print $1}' | while read line; do sudo gem uninstall $line; done
 ```
+
+```
+//出现 之前是正常的库突然间 找不到某个第三方库的头文件
+pod install --verbose --no-repo-update
+
+```
