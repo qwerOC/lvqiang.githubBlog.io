@@ -7,3 +7,8 @@
 
 
 ### crash
+
+
+
+### 打印app 启动时间
+DYLD_PRINT_STATISTICS
