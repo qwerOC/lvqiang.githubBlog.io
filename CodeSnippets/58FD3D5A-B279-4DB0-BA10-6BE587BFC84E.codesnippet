@@ -3,23 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>gcdmain</string>
+	<string>gcdApply</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_async(dispatch_get_main_queue(), ^{
-&lt;#code#&gt;  
-  });</string>
+	<string>    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        dispatch_apply(self.marry.count, dispatch_get_global_queue(0, 0), ^(size_t index) {
+        });
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"end - %@",[NSThread currentThread]);
+        });
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>872F0772-8FA2-4326-BD4D-D0387ACDA48F</string>
+	<string>58FD3D5A-B279-4DB0-BA10-6BE587BFC84E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>gcdmain</string>
+	<string>gcdApply</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>gcdmain</string>
+	<string>gcdApply</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
